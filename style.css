@@ -129,4 +129,7 @@ label{
   .check-dob-btn{
     padding: 1.2rem;
   }
+  .social-link{
+    width: 100%;
+  }
 }
