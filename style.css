@@ -6,3 +6,127 @@
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container{
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.navbar{
+  background: rgb(225,223,255);
+  background: linear-gradient(144deg, rgba(225,223,255,1) 0%, rgba(13,12,17,1) 0%, rgba(15,3,43,1) 100%);
+  padding: 0.7rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.navbar .nav-title{
+  font-size: 1.3rem;
+}
+
+.navbar .nav-desc{
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.calculate-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  margin-top: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+
+#date-of-birth, #lucky-number{
+  width: 15rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border: 1.5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+::placeholder{
+  color: rgb(0, 0, 0);
+}
+
+.check-dob-btn{
+  width: 15rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  margin-top: 1.7rem;
+  background: rgb(225,223,255);
+  background: linear-gradient(144deg, rgba(225,223,255,1) 0%, rgba(13,12,17,1) 0%, rgba(15,3,43,1) 100%);
+  color : white;
+  border: none;
+}
+
+.check-output{
+  font-size: 0.9rem;
+  color: black;
+  margin: 1.5rem 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer{
+    position: sticky;
+    top: 100%;
+    background: rgb(225,223,255);
+    background: linear-gradient(144deg, rgba(225,223,255,1) 0%, rgba(13,12,17,1) 0%, rgba(15,3,43,1) 100%);
+    padding: 0.7rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: white;
+    text-align: center;  
+}
+
+.social-link{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-link a{
+  color: white;
+  text-decoration: none;
+  margin-top: 0.4rem;
+}
+
+@media (max-width : 478px){
+  .container{
+    width: 98%;
+  }
+  #date-of-birth, #lucky-number{
+    padding: 1rem;
+  }
+
+  .check-dob-btn{
+    padding: 1.2rem;
+  }
+}
