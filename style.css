@@ -122,6 +122,16 @@ label{
   .container{
     width: 98%;
   }
+
+  .navbar .nav-title{
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-desc{
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
   #date-of-birth, #lucky-number{
     padding: 1rem;
   }
