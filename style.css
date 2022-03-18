@@ -115,7 +115,7 @@ label{
 .social-link a{
   color: white;
   text-decoration: none;
-  margin-top: 0.4rem;
+  margin:0.4rem 0rem;
 }
 
 @media (max-width : 478px){
